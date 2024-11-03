@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=More+Sugar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo" style="font-family: 'More Sugar', cursive;">PawPals</div>
+        <div class="tagline">Love is just a paw away</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#" class="sign-in" id="signInBtn">Sign In</a>
+            <a href="donate.html" class="donate">Donate</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <div class="left-content">
+            <div class="search-bar">
+                <span class="paw-icon">🐾</span>
+                <input type="text" placeholder="Search pets...">
+            </div>
+            <div class="categories">
+                <a href="#dogs">
+                    <img src="images/dog-icon.png" alt="Dogs" class="category-img">
+                    Dogs
+                </a>
+                <a href="#cats">
+                    <img src="images/cat-icon.png" alt="Cats" class="category-img">
+                    Cats
+                </a>
+                <a href="#other-animals">
+                    <img src="images/other-icon.png" alt="Other Animals" class="category-img">
+                    Other Animals
+                </a>
+                <a href="#rescued">
+                    <img src="images/rescued-icon.png" alt="Rescued" class="category-img">
+                    Rescued
+                </a>
+            </div>
+        </div>
+        <div class="doodle">
+            <img src="images/cute-doodle.png" alt="Doodle">
+        </div>
+    </main>
+
+    <!-- Available Pets Section -->
+    <section class="available-pets" id="home">
+        <h3>Available Pets</h3>
+        <div class="pet-grid" id="petGrid">
+            <!-- Placeholder for pet cards; initially 6 cards -->
+            <div class="pet-card">
+                <img src="images/default-pet-photo.jpg" alt="Pet">
+                <p>Name: Pet Name</p>
+                <p>Age: Pet Age</p>
+                <p>Gender: Pet Gender</p>
+                <p>Description: Brief Description</p>
+            </div>
+        </div>
+        <div class="more-button-container">
+            <button class="more-button" id="moreButton">More</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to PawPals! We are Aastha Nagrare and Kashish Patil, a dedicated team working to provide a proper platform for stray and rescued animals. Our mission is to connect NGOs with adopters and ensure that every animal finds a loving home. We believe in making a difference, one paw at a time!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2024 PawPals. All rights reserved.</p>
+        <p><a href="mailto:info@pawpals.com">Contact Us</a></p>
+    </footer>
+
+ <!-- Sign-In Modal -->
+<div id="signInModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div class="modal-header">
+            <h2>Sign In</h2>
+        </div>
+        <div class="modal-body">
+            <div id="initialOptions">
+                <button class="modal-btn" id="logInBtn">Log In</button>
+                <button class="modal-btn" id="createAccountBtn">Create an Account</button>
+                <button class="modal-btn continue-google">Continue with Google</button>
+            </div>
+            <div id="loginForm" style="display: none;">
+                <input type="text" id="loginId" placeholder="ID" class="modal-input">
+                <input type="password" id="loginPassword" placeholder="Password" class="modal-input">
+                <button class="modal-btn" id="submitLogin">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
