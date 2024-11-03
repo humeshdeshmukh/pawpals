@@ -4,8 +4,9 @@
   "description": "A mini project for PawPals",
   "main": "script.js",
   "scripts": {
-    "start": "node script.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "npx nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -79,5 +80,8 @@
     "unpipe": "^1.0.0",
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
