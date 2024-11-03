@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawPals</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/styles.css"> <!-- Adjusted path to CSS -->
     <link href="https://fonts.googleapis.com/css2?family=More+Sugar&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,14 +16,13 @@
             <a href="#home">Home</a>
             <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
-            <a href="#" class="sign-in" id="signInBtn">Sign In</a>
-            <a href="donate.html" class="donate">Donate</a>
+            <a href="./create-account.html" class="sign-in" id="signInBtn">Sign In</a>
+            <a href="./donate.html" class="donate">Donate</a>
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-
         <div class="left-content">
             <div class="search-bar">
                 <span class="paw-icon">🐾</span>
@@ -83,31 +82,29 @@
         <p><a href="mailto:info@pawpals.com">Contact Us</a></p>
     </footer>
 
- <!-- Sign-In Modal -->
-<div id="signInModal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <div class="modal-header">
-            <h2>Sign In</h2>
-        </div>
-        <div class="modal-body">
-            <div id="initialOptions">
-                <button class="modal-btn" id="logInBtn">Log In</button>
-                <button class="modal-btn" id="createAccountBtn">Create an Account</button>
-                <button class="modal-btn continue-google">Continue with Google</button>
+    <!-- Sign-In Modal -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="modal-header">
+                <h2>Sign In</h2>
             </div>
-            <div id="loginForm" style="display: none;">
-                <input type="text" id="loginId" placeholder="ID" class="modal-input">
-                <input type="password" id="loginPassword" placeholder="Password" class="modal-input">
-                <button class="modal-btn" id="submitLogin">Submit</button>
+            <div class="modal-body">
+                <div id="initialOptions">
+                    <button class="modal-btn" id="logInBtn">Log In</button>
+                    <button class="modal-btn" id="createAccountBtn">Create an Account</button>
+                    <button class="modal-btn continue-google">Continue with Google</button>
+                </div>
+                <div id="loginForm" style="display: none;">
+                    <input type="text" id="loginId" placeholder="ID" class="modal-input">
+                    <input type="password" id="loginPassword" placeholder="Password" class="modal-input">
+                    <button class="modal-btn" id="submitLogin">Submit</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script> <!-- Adjusted path to JS -->
 </body>
 </html>
