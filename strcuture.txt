@@ -1,0 +1,23 @@
+pawpals/
+├── assets/
+│   ├── images/                   # Folder for images used in the project
+│   ├── styles.css                # Main stylesheet for the project
+├── public/                       # Folder for all public HTML files
+│   ├── index.html                # Main landing page
+│   ├── create-account.html       # HTML for account creation
+│   ├── donate.html               # HTML for donations page
+├── src/
+│   ├── js/
+│   │   ├── auth.js               # Authentication script
+│   │   ├── create-account.js     # Script for create-account page
+│   │   ├── donate.js             # Script for donate page
+│   │   ├── script.js             # Main script for additional functions
+│   ├── models/
+│   │   └── user.js               # User model file
+│   └── server.js                 # Server-side script
+├── .vscode/
+│   └── pawpals.code-workspace    # VS Code workspace file
+├── .env                          # Environment variables file
+├── package.json                  # NPM package configuration
+├── package-lock.json             # NPM package lock file
+└── README.md                     # Project readme file
